@@ -1,0 +1,9 @@
+## Interface: 100107
+## Version: 1
+## Title: BRF_DebuffHighlight
+## IconTexture: Interface\AddOns\BRF_DebuffHighlight\icon.tga
+## Author: Slothpala
+## X-Curse-Project-ID: 924250
+
+core.lua
+
