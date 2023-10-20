@@ -104,15 +104,11 @@ local function makeHooks(frame)
         end
     end)
     if not hooked[frame] then
-        frame:HookScript("OnAttributeChanged", function(frame, attribute, value)
-            if attribute ~= "unit" then
-                return
-            end
-            if value then
-                updateAurasFull(frame)
-            else
-                blockColorUpdate[frame] = nil
-            end
+        frame:HookScript("OnShow", function(frame)
+            updateAurasFull(frame)
+        end)
+        frame:HookScript("OnHide", function(frame)
+            blockColorUpdate[frame] = nil
         end)
         hooked[frame] = true
     end
