@@ -1,4 +1,4 @@
-## Interface: 100107
+## Interface: 100200
 ## Version: 1
 ## Title: BRF_DebuffHighlight
 ## IconTexture: Interface\AddOns\BRF_DebuffHighlight\icon.tga
